@@ -76,7 +76,7 @@ function LoginPage ({ setLoggedInGuestId, setIsLoggedIn }) {
             />
           </div>
           <div>
-            <Button id='submit_login' variant="dark" className="ui button" type='submit'>Login</Button>
+            <Button id='submit_login' variant="dark" className="ui button" onClick={handleSubmit} type='submit'>Login</Button>
           </div>
           <div>
             <Button id='submit_signup' variant="dark" onClick={ navigateToSignUp } className="ui button" type='submit'>Signup Here!</Button>

@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
     # POST '/login'
     def create
-        user = Guest.find_by_username(params[:username])
+        guest = Guest.find_by_name(params[:username])
         if guest&.authenticate(params[:password])
           session[:guest_id] = guest.id
           render json: guest, status: :ok
