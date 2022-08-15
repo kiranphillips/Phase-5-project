@@ -1,6 +1,8 @@
 body {
   background-image: url(https://img.freepik.com/free-vector/polygonal-wireframe-image-human-hand-touch-electronic-display-abstract-vector-illustration_1284-30756.jpg);
-  background-size: contain;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: aquamarine;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -9,7 +11,73 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#login {
+  background-size: 100%;
+  height: 100%;
+  margin-top: -60px;
+  background-repeat: no-repeat;
+  text-align: right;
+  padding-right: 125px;
+  padding-bottom: 100px;
+}
+
+#login form {
+  height: 750px;
+}
+
+#logincolor {
+  padding-top: 80px;
+  color: aquamarine;
+  text-shadow: 2px .5px rgb(79, 73, 73);
+  font-size: 60px;
+  font-family: 'Allerta';
+}
+
+#signup {
+  height: 715px;
+  background-image: url(https://nmgprod.s3.amazonaws.com/media/files/81/b6/81b64122155eff8d081b2df0657dbb49/cover_image_1586187149.jpg.760x400_q85_crop_upscale.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  color: aquamarine;
+}
+
+form#login_form {
+  text-align: right;
+  padding-right: 40px;
+  padding-top: 15px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    color: aquamarine;
 }
+.navbar {
+  background-color: aqua;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.navbar .navlink {
+  /* float: left; */
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+/* Change the color of links on hover */
+.navbar .navlink:hover {
+  background-color: aqua;
+  color: rgb(244, 11, 213);
+}
+
+#kiran {
+  background-image: url(https://media.istockphoto.com/photos/second-hand-clothing-for-sale-at-a-garage-sale-picture-id1333790717?b=1&k=20&m=1333790717&s=170667a&w=0&h=T2GbrkReOHaNTU19KT3rRyW5nN4IYcAIsTCZVLU4fqU=);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 180px;
+}
+

@@ -4,7 +4,7 @@ import ReactPlayer from "react-player"
 function MeetTheTeam({ setIsLoggedIn }) {
 
   useEffect(() => {
-    setIsLoggedIn(sessionStorage.getGuest("loggedIn"))
+    setIsLoggedIn(sessionStorage.getItem("loggedIn"))
   }, []);
 
   return (

@@ -2,10 +2,10 @@ class GuestsController < ApplicationController
     def index
         render json: Guest.all
     end
-    # def show
-    #     user = Guest.find(params[:id])
-    #     render json: guest, serializer: 
-    # end
+    def show
+        user = Guest.find(params[:id])
+        render json: guest, serializer: GuestWithActivitiesSerializer
+    end
     def create
         user = Guest.create!(guest_params)
         session[:guest_id] = guest.id

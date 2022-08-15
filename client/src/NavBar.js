@@ -22,8 +22,8 @@ const Navbar = ({ loggedInGuestId, isLoggedIn, setIsLoggedIn }) => {
       type="submit"
       onClick={handleLogout}
     >
-      {" "}
-      Logout{" "}
+      
+      Logout
     </Button>
   ) : null;
 
@@ -32,28 +32,24 @@ const Navbar = ({ loggedInGuestId, isLoggedIn, setIsLoggedIn }) => {
       <div className="navbar">
         <div>
           <NavLink
-            className="navlink"
-            to="/activities"
-            element={<Activities />}
-          >
-            {" "}
-            Activities{" "}
+            className="navlink" to="/activities" element={<Activities />}> 
+            Activities
           </NavLink>
           <NavLink className="navlink" to="/house keeping">
-            {" "}
-            House Keeping{" "}
+            
+            House Keeping
           </NavLink>
           <NavLink className="navlink" to="/gallery">
-            {" "}
-            Gallery{" "}
+            
+            Gallery
           </NavLink>
           <NavLink className="navlink" to="/dining">
-            {" "}
-            Dining{" "}
+            
+            Dining
           </NavLink>
-          <NavLink className="navlink" to="/meet the team">
-            {" "}
-            meet the team{" "}
+          <NavLink className="navlink" to="/meettheteam">
+            
+            meet the team
           </NavLink>
         </div>
         <div>

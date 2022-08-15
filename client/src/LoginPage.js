@@ -54,7 +54,7 @@ function LoginPage ({ setLoggedInGuestId, setIsLoggedIn }) {
     <>
       <div id='login'>
         <form widths='equal' onSubmit={ handleSubmit }>
-          <h3 id='logincolor'> // Touch </h3>
+          <h3 id='logincolor'> Touch </h3>
           <div className='logininput'>
             <input
               className='input'

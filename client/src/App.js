@@ -6,6 +6,7 @@ import SignUp from "./Signup";
 import Navbar from "./NavBar";
 import Activities from "./Activities";
 import MeetTheTeam from "./MeetTheTeam";
+import Gallery from "./Gallery";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -71,9 +72,16 @@ function App() {
           }
         />
         <Route
-          path="/Meet_the_team"
+          path="/meet_the_team"
           element={<MeetTheTeam setIsLoggedIn={setIsLoggedIn} />}
         />
+         <Route
+          path="/gallery"
+          element={
+            <Gallery
+              setIsLoggedIn={setIsLoggedIn}
+              setLoggedInGuestId={setLoggedInGuestId} />}
+            />
       </Routes>
     </div>
   );
