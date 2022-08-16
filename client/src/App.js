@@ -53,7 +53,7 @@ function App() {
           element={
             <Activities
               setIsLoggedIn={setIsLoggedIn}
-              page={"actvities"}
+              page={"activities"}
               loggedInGuestId={loggedInGuestId}
             />
           }
@@ -72,7 +72,7 @@ function App() {
           }
         />
         <Route
-          path="/meet_the_team"
+          path="/MeetTheTeam"
           element={<MeetTheTeam setIsLoggedIn={setIsLoggedIn} />}
         />
          <Route

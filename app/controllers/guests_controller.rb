@@ -3,17 +3,17 @@ class GuestsController < ApplicationController
         render json: Guest.all
     end
     def show
-        user = Guest.find(params[:id])
+        guest = Guest.find(params[:id])
         render json: guest, serializer: GuestWithActivitiesSerializer
     end
     def create
-        user = Guest.create!(guest_params)
+        guest = Guest.create!(guest_params)
         session[:guest_id] = guest.id
         render json: guest, status: :ok
     end
     private
     def guest_params
-        params.permit(:username, :email, :password)
+        params.permit(:name, :email, :password)
     end
 
 end

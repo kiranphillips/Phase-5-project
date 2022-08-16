@@ -12,7 +12,9 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.0",
+    "moment": "^2.29.4",
     "react-bootstrap": "^2.5.0",
+    "react-calendar": "^3.7.0",
     "react-dom": "^18.2.0",
     "react-image-gallery": "^1.2.9",
     "react-player": "^2.10.1"

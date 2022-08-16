@@ -18,7 +18,7 @@ function MeetTheTeam({ setIsLoggedIn }) {
       <div><a href="https://www.linkedin.com/in/kiran-phillips-925055b9/">linkedin</a></div>
       <div id="space" />
       <div>
-      <ReactPlayer
+      <ReactPlayer id="video"
         url="https://www.youtube.com/watch?v=v6kDgFh_ec4" />
     </div></>
   );

@@ -70,14 +70,148 @@ code {
 
 /* Change the color of links on hover */
 .navbar .navlink:hover {
-  background-color: aqua;
+  background-color: white;
   color: rgb(244, 11, 213);
 }
 
-#kiran {
-  background-image: url(https://media.istockphoto.com/photos/second-hand-clothing-for-sale-at-a-garage-sale-picture-id1333790717?b=1&k=20&m=1333790717&s=170667a&w=0&h=T2GbrkReOHaNTU19KT3rRyW5nN4IYcAIsTCZVLU4fqU=);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  padding-bottom: 180px;
+h1 {
+  color: aquamarine;
+/* text-shadow: 2px 3px aquamarine; */
+font-size: xxx-large;
+text-align: center;
 }
 
+h2 {
+  color: aquamarine;
+  /* text-shadow: 1px 2px rgb(252, 251, 251); */
+  padding-left: 15px;
+}
+
+#video {
+  text-align: ;
+  width: 500px;
+  height: 750px;
+  margin-left: 25%;
+}
+
+#gallery {
+  width: 650px;
+  height: 500px;
+  margin-left: 350px;
+  margin-right: 350px;
+}
+
+.img {
+  float: left;
+  max-width: fit-content;
+  height: 50%;
+  background-size: cover;
+}
+
+.ui .card {
+  background-color: rgba(142, 136, 140, 0.855);
+  text-overflow: ellipsis;
+}
+
+.ui.grid {
+  width: 50px;
+  height: 50px;
+  padding: 50px 20px;
+}
+.textcenter {
+  color: aquamarine;
+}
+
+.bold {
+  color: aquamarine;
+}
+
+.react-calendar { 
+  margin: auto;
+  width: 400px;
+  max-width: 100%;
+  background-color: #f0f0f0;
+  color: #222;
+  border-radius: 8px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.125em;
+ }
+ .react-calendar__navigation button {
+  color: #6f48eb;
+  min-width: 44px;
+  background: none;
+  font-size: 16px;
+  margin-top: 8px;
+ }
+ .react-calendar__navigation button:enabled:hover,
+ .react-calendar__navigation button:enabled:focus {
+  background-color: #f8f8fa;
+ }
+ .react-calendar__navigation button[disabled] {
+  background-color: #f0f0f0;
+ }
+ abbr[title] {
+  text-decoration: none;
+ }
+ /* .react-calendar__month-view__days__day--weekend {
+  color: #d10000;
+ } */
+ .react-calendar__tile:enabled:hover,
+ .react-calendar__tile:enabled:focus {
+  background: #f8f8fa;
+  color: #6f48eb;
+  border-radius: 6px;
+ }
+ .react-calendar__tile--now {
+  background: #6f48eb33;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #6f48eb;
+ }
+ .react-calendar__tile--now:enabled:hover,
+ .react-calendar__tile--now:enabled:focus {
+  background: #6f48eb33;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #6f48eb;
+ }
+ .react-calendar__tile--hasActive:enabled:hover,
+ .react-calendar__tile--hasActive:enabled:focus {
+  background: #f8f8fa;
+ }
+ .react-calendar__tile--active {
+  background: #6f48eb;
+  border-radius: 6px;
+  font-weight: bold;
+  color: white;
+ }
+ .react-calendar__tile--active:enabled:hover,
+ .react-calendar__tile--active:enabled:focus {
+  background: #6f48eb;
+  color: white;
+ }
+ .react-calendar--selectRange .react-calendar__tile--hover {
+  background-color: #f8f8fa;
+ }
+ .react-calendar__tile--range {
+  background: #f8f8fa;
+  color: #6f48eb;
+  border-radius: 0;
+ }
+ .react-calendar__tile--rangeStart {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background: #6f48eb;
+  color: white;
+ }
+ .react-calendar__tile--rangeEnd {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background: #6f48eb;
+  color: white;
+ }

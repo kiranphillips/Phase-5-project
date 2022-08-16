@@ -49,7 +49,7 @@ const Navbar = ({ loggedInGuestId, isLoggedIn, setIsLoggedIn }) => {
           </NavLink>
           <NavLink className="navlink" to="/meettheteam">
             
-            meet the team
+            Meet the team
           </NavLink>
         </div>
         <div>
@@ -60,7 +60,7 @@ const Navbar = ({ loggedInGuestId, isLoggedIn, setIsLoggedIn }) => {
               element={<Activities />}
             >
               <svg
-                xmlns="http://www.w3.org/2000/svg"
+                xmlns="client/src/imgs/Photos.jpeg"
                 width="45"
                 height="45"
                 fill="currentColor"

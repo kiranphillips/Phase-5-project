@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from "react";
+import Calendar from "react-calendar";
+import moment from 'moment'
 import Availabilites from "./Availablities";
 
 function Activities({ setIsLoggedIn, page, loggedInGuestId }) {
   const [activities, setActivities] = useState([]);
   const [show, setShow] = useState(false);
+  const [dateState, setDateState] = useState(new Date())
+ 
+  console.log(activities)
 
   useEffect(() => {
     setIsLoggedIn(sessionStorage.getItem("loggedIn"));
@@ -17,8 +22,8 @@ function Activities({ setIsLoggedIn, page, loggedInGuestId }) {
     fetch("/activities")
       .then((r) => r.json())
       .then((data) => setActivities(data));
-    setActivities(activities);
-    window.location.reload(true);
+    // setActivities(activities);
+    // window.location.reload(true);
   }
 
   function handleUpdateActivities(updatedActivities, id) {
@@ -38,18 +43,20 @@ function Activities({ setIsLoggedIn, page, loggedInGuestId }) {
     newActivities([...activities, newActivities]);
   }
 
-  // const activitiesInfo = activities.map((activities) => (
-  //   <Availabilites
-  //     key={activities.id}
-  //     activities={activities}
-  //     handleUpdateActivities={handleUpdateActivities}
-  //     // fetchAllActivities = { fetchAllActivities }
-  //   />
-  // ));
+  const activitiesInfo = activities.map((activity) => {
+    console.log(activity)
 
-  // const handleClick = () => {
-  //   setShow(true)
-  // }
+    // <Availabilites
+    //   key={activities.id}
+    //   activities={activities}
+    //   handleUpdateActivities={handleUpdateActivities}
+    //   fetchAllActivities = { fetchAllActivities }
+    // />
+  });
+
+  const handleClick = () => {
+    setShow(true)
+  }
 
   const modalClose = () => {
     setShow(false);
@@ -63,18 +70,41 @@ function Activities({ setIsLoggedIn, page, loggedInGuestId }) {
     window.location.reload(true);
   };
 
+  //Change Date Method 
+const changeDate = (e) => {
+  setDateState(e)
+}
+
+
+
   return (
     <>
+  <div className='app'>
+      <h1 className='text-center'>Book your Activity</h1>
+      <div className='calendar-container'></div>  
+<Calendar
+ value={dateState}
+ onChange={changeDate}
+/>
+</div>
+{/* <p>Current selected date is <b>{moment(dateState).format('MMMM Do YYYY')}</b></p> */}
+
+     
+      <p className='text-center'>
+        <span className='bold'>Selected Date:{' '}
+        {dateState.toDateString()}</span>
+      </p>
+    
       {/* {show && (
         <Availabilites
           closeModal={modalClose}
           loggedInGuestId={loggedInGuestId}
           onAddItem={handleAddActivities}
         />
-      )}
+      )} */}
       <div className="ui four column grid">
-        <div id="item_card">{activitiesInfo}</div>
-      </div> */}
+        <div id="">{activitiesInfo}</div>
+      </div> 
     </>
   );
 }
