@@ -17,6 +17,7 @@
     "react-calendar": "^3.7.0",
     "react-dom": "^18.2.0",
     "react-image-gallery": "^1.2.9",
-    "react-player": "^2.10.1"
+    "react-player": "^2.10.1",
+    "react-time-picker": "^4.5.0"
   }
 }

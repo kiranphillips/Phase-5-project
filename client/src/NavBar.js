@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { NavLink, useNavigate } from "react-router-dom";
 import Activities from "./Activities";
+import Gallery from "./Gallery";
 
 const Navbar = ({ loggedInGuestId, isLoggedIn, setIsLoggedIn }) => {
   const history = useNavigate();
@@ -39,8 +40,7 @@ const Navbar = ({ loggedInGuestId, isLoggedIn, setIsLoggedIn }) => {
             
             House Keeping
           </NavLink>
-          <NavLink className="navlink" to="/gallery">
-            
+          <NavLink className="navlink" to="/gallery" element={<Gallery />}>
             Gallery
           </NavLink>
           <NavLink className="navlink" to="/dining">

@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from "react";
 import Calendar from "react-calendar";
+import TimePicker from 'react-time-picker'
 import moment from 'moment'
 import Availabilites from "./Availablities";
+import ActivitiesCard from "./ActivitiesCard";
 
 function Activities({ setIsLoggedIn, page, loggedInGuestId }) {
   const [activities, setActivities] = useState([]);
   const [show, setShow] = useState(false);
   const [dateState, setDateState] = useState(new Date())
+  const [value, onChange] = useState('10:00');
  
   console.log(activities)
 
@@ -45,6 +48,10 @@ function Activities({ setIsLoggedIn, page, loggedInGuestId }) {
 
   const activitiesInfo = activities.map((activity) => {
     console.log(activity)
+    return <ActivitiesCard 
+    key={activity.id}
+    activity = {activity}
+    />
 
     // <Availabilites
     //   key={activities.id}
@@ -86,6 +93,7 @@ const changeDate = (e) => {
  value={dateState}
  onChange={changeDate}
 />
+<TimePicker onChange={onChange} value={value} />
 </div>
 {/* <p>Current selected date is <b>{moment(dateState).format('MMMM Do YYYY')}</b></p> */}
 
@@ -102,9 +110,9 @@ const changeDate = (e) => {
           onAddItem={handleAddActivities}
         />
       )} */}
-      <div className="ui four column grid">
-        <div id="">{activitiesInfo}</div>
-      </div> 
+    
+        <div id="activityinfo">{ activitiesInfo }</div>
+  
     </>
   );
 }
