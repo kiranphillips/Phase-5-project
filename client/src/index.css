@@ -385,3 +385,19 @@ margin: auto;
   grid-row-start: 3;
   grid-column: 4 / span 2;
 }
+
+#timeslot {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50; /* Green */
+  width: 250px;
+  height: 50px;
+}
+
+.activitynames {
+  /* background-image: url(https://img.freepik.com/free-vector/polygonal-wireframe-image-human-hand-touch-electronic-display-abstract-vector-illustration_1284-30756.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat; */
+  color: aquamarine;
+  margin: 0;
+}
