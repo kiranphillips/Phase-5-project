@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Calendar from "react-calendar";
 import moment from 'moment'
+import Availabilites from "./Availablities";
 import ActivitiesCard from "./ActivitiesCard";
-import { AppointmentPicker } from 'react-appointment-picker';
-
 
 
 
@@ -11,7 +10,7 @@ function Activities({ setIsLoggedIn, page, loggedInGuestId }) {
   const [activities, setActivities] = useState([]);
   const [show, setShow] = useState(false);
   const [dateState, setDateState] = useState(new Date())
-
+  const [value, onChange] = useState('10:00');
  
   console.log(activities)
 
@@ -92,7 +91,6 @@ const changeDate = (e) => {
         {dateState.toDateString()}</span>
       </p>
         <div id="activityinfo">{ activitiesInfo }</div>
-    
     </>
   );
 }

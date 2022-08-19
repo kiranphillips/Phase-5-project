@@ -1,11 +1,18 @@
 import React, { useState, useEffect } from "react";
 import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import Form from 'react-bootstrap/Form';
+
 
 function ActivitiesCard({ activity, onActivityClicked }) {
   const [show, setShow] = useState(false);
 
   const handleClick = () => {
     setShow(true);
+  };
+
+  const handleClose = () => {
+    setShow(false);
   };
   // const {id, spa, boma, bushdinner, archery, cookingclass, safari} = activity
   const { id, name, availabilities } = activity;
@@ -21,7 +28,8 @@ function ActivitiesCard({ activity, onActivityClicked }) {
           <Button id="timeslot" variant="dark" onClick={handleClick}>
             Book This Time Slot
           </Button>
-          <span>
+          <Modal show={show} onHide={handleClose}></Modal>
+          <Form>
             {availabilities.map((availabilities) => {
               const endDate = new Date(availabilities.end_time);
               const minutes = endDate.getMinutes();
@@ -34,11 +42,11 @@ function ActivitiesCard({ activity, onActivityClicked }) {
               return (
                 <div>
                   {" "}
-                  {`${date.getHours()}:${startFormatedMinutes}-${endDate.getHours()}:${formatedMinutes}`}
+                <button> {`${date.getHours()}:${startFormatedMinutes}-${endDate.getHours()}:${formatedMinutes}`}</button> 
                 </div>
               );
             })}
-          </span>
+          </Form>
         </div>
       </div>
     </div>

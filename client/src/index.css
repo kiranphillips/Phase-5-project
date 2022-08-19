@@ -34,8 +34,12 @@ body {
 }
 
 #signup {
-  padding: 125px;
-  float: inline-start;
+  background-image: url(https://basyspro.com/wp-content/uploads/2018/10/AdobeStock_157757227.jpeg);
+  padding-bottom: 900px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* padding: 125px; */
+  /* float: inline-start; */
   color: aquamarine;
 }
 
