@@ -8,6 +8,7 @@ import Gallery from "./Gallery";
 import HouseKeeping from "./HouseKeeping";
 import Map from "./Map";
 import Reservations from "./Reservations";
+import WhatIsTouch from "./WhatIsTouch"
 
 const Navbar = ({ loggedInGuestId, isLoggedIn, setIsLoggedIn }) => {
   const history = useNavigate();
@@ -57,6 +58,9 @@ const Navbar = ({ loggedInGuestId, isLoggedIn, setIsLoggedIn }) => {
           </NavLink>
           <NavLink className="navlink" to="/meettheteam">
             Meet the team
+          </NavLink>
+          <NavLink className="navlink" to="/whatistouch"element={<WhatIsTouch />}>
+            What is Touch
           </NavLink>
         </div>
         <div>

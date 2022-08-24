@@ -85,6 +85,7 @@ const [picList, setPicList] = useState([img1,img2,img3,img4,img5,img6,img7,img7,
       <div class="hex"><img src="https://www.ubuntutravelgroup.com/wp-content/uploads/2019/12/night-dining-boma-andbeyond-sandibe-1.jpg" alt="some"/></div>
       <div class="hex"><img src="https://resources.knightonreeve.co.uk/accommodation/andbeyond-sandibe-okavango-safari-lodge/_1920x1020_crop_center-center_80/Sandibe_B059.jpg?mtime=20161003135800" alt="some"/></div>
       <div class="hex"><img src="https://www.theluxevoyager.com/wp-content/uploads/2019/02/African-Bush-Camps-Bumi-Hills-Safari-Lodge-Exteriors-Deck-971x546.jpg" alt="some"/></div>
+      {/* <div class="hex"><img src="https://bigseventravel.com/wp-content/uploads/2019/06/maxresdefault.jpg" alt="some"/></div> */}
 
           </section>
         );

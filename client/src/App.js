@@ -12,6 +12,7 @@ import Reservations from "./Reservations"
 import HouseKeeping from "./HouseKeeping"
 import Map from "./Map"
 import "bootstrap/dist/css/bootstrap.min.css";
+import WhatIsTouch from "./WhatIsTouch";
 
 
 function App() {
@@ -111,6 +112,13 @@ function App() {
           path="/map"
           element={
             <Map
+              setIsLoggedIn={setIsLoggedIn}
+              setLoggedInGuestId={setLoggedInGuestId} />}
+            />
+                  <Route
+          path="/WhatIsTouch"
+          element={
+            <WhatIsTouch
               setIsLoggedIn={setIsLoggedIn}
               setLoggedInGuestId={setLoggedInGuestId} />}
             />

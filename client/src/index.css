@@ -1,6 +1,8 @@
 body {
   background-image: url(https://img.freepik.com/free-vector/polygonal-wireframe-image-human-hand-touch-electronic-display-abstract-vector-illustration_1284-30756.jpg);
-  background-size: 100%;
+  /* background-size: 100%; */
+  background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   color: aquamarine;
   margin: 0;
@@ -38,11 +40,12 @@ body {
   float: right;
 }
 
-.signup {
-  background-image: url(https://basyspro.com/wp-content/uploads/2018/10/AdobeStock_157757227.jpeg);
-  padding-bottom: 900px;
+#signup {
+  /* background-image: url(https://basyspro.com/wp-content/uploads/2018/10/AdobeStock_157757227.jpeg);
+  padding-bottom: 1000px;
+  transp
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   color: aquamarine;
 }
 
@@ -445,3 +448,22 @@ margin: auto;
   background-repeat: no-repeat;
   color: yellow;
 }
+
+.times {
+  color: yellow;
+}
+
+.hsk {
+  float: left;
+  width: 33.33%;
+  height: 200px;
+  padding: 5px;
+}
+/* .row::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+/*  */
+
+

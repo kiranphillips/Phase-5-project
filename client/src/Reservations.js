@@ -33,19 +33,30 @@ fetch(`/availabilities/${availabilityID}`, {
       .then((activities) => setActivities(activities));
   }, []);
 
-  activities.map((activity) => console.log(activity));
+//   activities.map((activity) => console.log(activity));
   //   console.log(activity.availability)
 
-  const work = activities.map((activity) => (
+  const work = activities.map((activity) => {
+    const endDate = new Date(activity.availability.end_time);
+    const minutes = endDate.getMinutes();
+    const formatedMinutes = minutes < 10 ? `0${minutes}` : minutes;
+    const date = new Date(activity.availability.start_time);
+
+    const startMinutes = date.getMinutes();
+    const startFormatedMinutes =
+      startMinutes < 10 ? `0${startMinutes}` : startMinutes;
+    
+return(
     <div>
       <div>{activity.availability.activity.name} </div>
-      <p>
-        Start time{activity.availability.start_time}
-        End time{activity.availability.end_time}
+      <p className="times">
+      {`${date.getHours()}:${startFormatedMinutes}-${endDate.getHours()}:${formatedMinutes}`}
+
+        
       </p>
       <button onClick={()=> handleClick(activity.id, activity.availability.id)}>reservation canceled</button>
     </div>
-  ));
+  )});
 
   return (
     <div>

@@ -19,7 +19,7 @@ function MeetTheTeam({ setIsLoggedIn }) {
       <div id="space" />
       <div>
       <ReactPlayer id="video"
-        url="https://www.youtube.com/watch?v=v6kDgFh_ec4" />
+        url="https://youtu.be/4BXkRy2r4kg" />
     </div>
 
     </>

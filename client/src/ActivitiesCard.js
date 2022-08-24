@@ -10,7 +10,6 @@ function ActivitiesCard({ fetchAllActivities, activity }) {
   const handleClick = () => {
     setShow(true);
   };
-
   // const [disable, setDisable] = React.useState(false);
 
   const handleClose = () => {

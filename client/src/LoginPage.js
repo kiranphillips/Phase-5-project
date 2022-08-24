@@ -84,7 +84,8 @@ function LoginPage ({ setLoggedInGuestId, setIsLoggedIn }) {
           </div>
         </form>
         <h1>
-        <Clock className="clock" format={'HH:mm:ss'} ticking={true} timezone={'US/Pacific'} />
+      
+        <Clock className="clock" format={'HH:mm:ss'} ticking={true} timezone={'Africa/Johannesburg'} />
         </h1>
       </div>
     </>
