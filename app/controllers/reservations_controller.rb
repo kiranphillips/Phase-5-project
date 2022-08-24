@@ -9,6 +9,12 @@ class ReservationsController < ApplicationController
         render json: reservation, status: :created
     end
 
+
+    def destroy
+        reservation= Reservation.find(params[:id])
+        reservation.destroy
+        head :no_content
+    end
     private
 
     def reservation_params

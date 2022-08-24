@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
+import Clock from 'react-live-clock';
 
 function LoginPage ({ setLoggedInGuestId, setIsLoggedIn }) {
   const [ formData, setFormData ] = useState({
@@ -82,6 +83,9 @@ function LoginPage ({ setLoggedInGuestId, setIsLoggedIn }) {
             <Button id='submit_signup' variant="dark" onClick={ navigateToSignUp } className="ui button" type='submit'>Signup Here!</Button>
           </div>
         </form>
+        <h1>
+        <Clock className="clock" format={'HH:mm:ss'} ticking={true} timezone={'US/Pacific'} />
+        </h1>
       </div>
     </>
   )

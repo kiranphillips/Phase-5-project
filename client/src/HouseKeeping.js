@@ -34,7 +34,7 @@ function HouseKeeping() {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="prefrences">
-              <Form.Label>What type pillow do you prefer ?</Form.Label>
+              <Form.Label>What type sheets do you prefer ?</Form.Label>
               <Form.Select>
               <option value="0"></option>
                <option value="1">Egyptian Cotton</option>
@@ -46,7 +46,7 @@ function HouseKeeping() {
             </Form.Select>
             </Form.Group>
             <Form.Group className="mb-3" controlId="prefrences">
-              <Form.Label> Coffee or Tea</Form.Label>
+              <Form.Label> Coffee or Tea ?</Form.Label>
               <Form.Select>
               <option value="0"></option>
                <option value="1">Nespresso Machine</option>
@@ -56,7 +56,7 @@ function HouseKeeping() {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="prefrences">
-              <Form.Label> Wake up call</Form.Label>
+              <Form.Label> Wake up call ?</Form.Label>
               <Form.Select>
               <option value="0"></option>
                <option value="1">No</option>
@@ -64,7 +64,7 @@ function HouseKeeping() {
             </Form.Select>
             </Form.Group>
             <Form.Group className="mb-3" controlId="prefrences">
-              <Form.Label> What temprture would you like your room</Form.Label>
+              <Form.Label> What temprture would you like your room?</Form.Label>
               <Form.Select>
               <option value="0"></option>
                <option value="1">60 degrees</option>
@@ -76,7 +76,7 @@ function HouseKeeping() {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="prefrences">
-              <Form.Label> Smoking or non Smoking</Form.Label>
+              <Form.Label> Smoking or non Smoking?</Form.Label>
               <Form.Select>
               <option value="0"></option>
                <option value="1">Yes</option>
