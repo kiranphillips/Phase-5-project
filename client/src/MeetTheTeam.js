@@ -20,7 +20,10 @@ function MeetTheTeam({ setIsLoggedIn }) {
       <div>
       <ReactPlayer id="video"
         url="https://www.youtube.com/watch?v=v6kDgFh_ec4" />
-    </div></>
+    </div>
+
+    </>
+    
   );
 };
 

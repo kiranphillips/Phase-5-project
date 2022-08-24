@@ -7,8 +7,12 @@ import Navbar from "./NavBar";
 import Activities from "./Activities";
 import MeetTheTeam from "./MeetTheTeam";
 import Gallery from "./Gallery";
-
+import Dining from "./Dining"
+import Reservations from "./Reservations"
+import HouseKeeping from "./HouseKeeping"
+import Map from "./Map"
 import "bootstrap/dist/css/bootstrap.min.css";
+
 
 function App() {
   const [guests, setGuests] = useState([]);
@@ -79,6 +83,34 @@ function App() {
           path="/gallery"
           element={
             <Gallery
+              setIsLoggedIn={setIsLoggedIn}
+              setLoggedInGuestId={setLoggedInGuestId} />}
+            />
+               <Route
+          path="/dining"
+          element={
+            <Dining
+              setIsLoggedIn={setIsLoggedIn}
+              setLoggedInGuestId={setLoggedInGuestId} />}
+            />
+          <Route
+          path="/reservations"
+          element={
+            <Reservations
+              setIsLoggedIn={setIsLoggedIn}
+              setLoggedInGuestId={setLoggedInGuestId} />}
+            />
+            <Route
+          path="/housekeeping"
+          element={
+            <HouseKeeping
+              setIsLoggedIn={setIsLoggedIn}
+              setLoggedInGuestId={setLoggedInGuestId} />}
+            />
+                <Route
+          path="/map"
+          element={
+            <Map
               setIsLoggedIn={setIsLoggedIn}
               setLoggedInGuestId={setLoggedInGuestId} />}
             />

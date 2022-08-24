@@ -4,7 +4,7 @@ import { getAppointments, cancelAppointment } from "./appointments-actions";
 import AppointmentsTimeslot from "./appointments-timeslot";
 import { Link } from "react-router-dom";
 
- function Appointments({ id: userId }) {
+ function Appointments({ id: guestId }) {
     const dispatch = useDispatch();
     const [startTime, setStartTime] = useState(0);
     const [endTime, setEndTime] = useState(24);
@@ -23,11 +23,11 @@ import { Link } from "react-router-dom";
                 .filter(appointment => appointment.appointment_end <= endTime)
                 .sort((a, b) => a.id - b.id)
     );
-    const userAppointment = useSelector(
+    const guestAppointment = useSelector(
         state =>
             state.appointments &&
             state.appointments
-                .filter(appointment => appointment.patient_id === userId)
+                .filter(appointment => appointment.guest_id === guestId)
                 .shift()
     );
 
@@ -68,15 +68,15 @@ import { Link } from "react-router-dom";
     }
 
     let showAppointment;
-    if (userAppointment) {
-        showAppointment = `${userAppointment.day} ${
-            monthNames[userAppointment.month]
+    if (guestAppointment) {
+        showAppointment = `${guestAppointment.day} ${
+            monthNames[guestAppointment.month]
         }
-    ${userAppointment.year}, ${userAppointment.weekday} from
-    ${userAppointment.appointment_start}:00
+    ${guestAppointment.year}, ${guestAppointment.weekday} from
+    ${guestAppointment.appointment_start}:00
     until ${
-    userAppointment.appointment_end
-}:00. Please add it to your personal calendar.
+    guestAppointment.appointment_end
+}:00. 
     `;
     }
 
@@ -98,7 +98,7 @@ import { Link } from "react-router-dom";
                     <button
                         className="appointment-cancel-button"
                         onClick={e =>
-                            dispatch(cancelAppointment(userAppointment.id))
+                            dispatch(cancelAppointment(guestAppointment.id))
                         }
                     >
                         Cancel appointment
@@ -192,7 +192,7 @@ import { Link } from "react-router-dom";
                                     {day.map(timeslots => (
                                         <AppointmentsTimeslot
                                             key={timeslots.id}
-                                            userId={userId}
+                                            guestId={guestId}
                                             timeslots={timeslots}
                                         />
                                     ))}

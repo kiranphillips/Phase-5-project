@@ -33,17 +33,26 @@ body {
   font-family: 'Allerta';
 }
 
-#signup {
+.signup {
   background-image: url(https://basyspro.com/wp-content/uploads/2018/10/AdobeStock_157757227.jpeg);
   padding-bottom: 900px;
   background-size: contain;
   background-repeat: no-repeat;
-  /* padding: 125px; */
-  /* float: inline-start; */
   color: aquamarine;
 }
 
-form#login_form {
+.kiran {
+  color: white;
+  float: inline-end;
+}
+
+
+.signUpForm {
+  float: left;;
+}
+
+
+#login_form {
   text-align: right;
   padding-right: 40px;
   padding-top: 15px;
@@ -90,12 +99,17 @@ h2 {
 }
 
 #video {
-  text-align: ;
-  width: 500px;
-  height: 750px;
+  text-align: center;
+  width: 125%;
+  height: 125%;
   margin-left: 25%;
 }
 
+.video-wrapper {
+  height: 125%;
+  width: 125%;
+  min-height: 225px;
+ }
 
 #gallery {
   width: 650px;
@@ -405,3 +419,22 @@ margin: auto;
   color: aquamarine;
   margin: 0;
 }
+
+.slide {
+  width: 750px;
+  height: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.App {
+  color: aquamarine;
+  text-align: center;
+  padding: 5px;
+  font-size: large;
+}
+/* 
+.modal {
+  float: left;
+  
+} */

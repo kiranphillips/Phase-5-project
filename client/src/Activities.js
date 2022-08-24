@@ -1,18 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Calendar from "react-calendar";
-import moment from 'moment'
-import Availabilites from "./Availablities";
 import ActivitiesCard from "./ActivitiesCard";
-
-
 
 function Activities({ setIsLoggedIn, page, loggedInGuestId }) {
   const [activities, setActivities] = useState([]);
   const [show, setShow] = useState(false);
-  const [dateState, setDateState] = useState(new Date())
-  const [value, onChange] = useState('10:00');
- 
-  console.log(activities)
+  const [dateState, setDateState] = useState(new Date());
+  // const [value, onChange] = useState("10:00");
+
+  // console.log(activities);
 
   useEffect(() => {
     setIsLoggedIn(sessionStorage.getItem("loggedIn"));
@@ -48,16 +44,13 @@ function Activities({ setIsLoggedIn, page, loggedInGuestId }) {
   }
 
   const activitiesInfo = activities.map((activity) => {
-    console.log(activity)
-    return <ActivitiesCard 
-    key={activity.id}
-    activity = {activity}
-    />
+    // console.log(activity)
+    return <ActivitiesCard key={activity.id} fetchAllActivities={fetchAllActivities} activity={activity} />;
   });
 
   const handleClick = () => {
-    setShow(true)
-  }
+    setShow(true);
+  };
 
   const modalClose = () => {
     setShow(false);
@@ -71,26 +64,22 @@ function Activities({ setIsLoggedIn, page, loggedInGuestId }) {
     window.location.reload(true);
   };
 
-  //Change Date Method 
-const changeDate = (e) => {
-  setDateState(e)
-}
+  //Change Date Method
+  const changeDate = (e) => {
+    setDateState(e);
+  };
 
   return (
     <>
-  <div className='app'>
-      <h1 className='text-center'>Book your Activity</h1>
-      <div className='calendar-container'></div>  
-<Calendar
-    value={dateState}
-    onChange={changeDate}
-/>
-</div>    
-      <p className='text-center'>
-        <span className='bold'>Selected Date:{' '}
-        {dateState.toDateString()}</span>
+      <div className="app">
+        <h1 className="text-center">Book your Activity</h1>
+        <div className="calendar-container"></div>
+        <Calendar value={dateState} onChange={changeDate} />
+      </div>
+      <p className="text-center">
+        <span className="bold">Selected Date: {dateState.toDateString()}</span>
       </p>
-        <div id="activityinfo">{ activitiesInfo }</div>
+      <div id="activityinfo">{activitiesInfo}</div>
     </>
   );
 }
