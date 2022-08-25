@@ -18,7 +18,7 @@ export default function SimpleMap(){
     // Important! Always set the container height explicitly
     <>
       Have a look at where we are.
-      <div style={{ height: '60vh', width: '100%' }}>
+      <div style={{ height: '45vh', width: '100%' }}>
         <script async
           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWJT23O_lwn00PfSEDHt5IB8HWD8Ey3H8&callback=initMap">
         </script>
@@ -34,7 +34,7 @@ export default function SimpleMap(){
       </div> <div className="africa">Things you need to know about coming here and the property itself.
       <li> South Africa has 11 official languages.
         
-        <li>While the country only covers 1% of the Earth’s land surface, South Africa boasts 10% of the world’s bird, fish and plant species as well as 6% of its mammal and reptile species!</li>
+        <li>While the country only covers 1% of the Earth’s land surface, South Africa boasts 10% of the world’s bird, fish & plant species as well as 6% of its mammal & reptile species!</li>
        
         <li>South Africa is also home to the world’s longest wine route: Route 62. It spans an impressive 850 kilometres</li>
         

@@ -45,9 +45,20 @@ end
 Availability.create(start_time:DateTime.new(2022, 10, 16, 15, 0, 0, "-0600"), end_time:DateTime.new(2022, 10, 16, 19, 30, 0, "-0600"), activity_id: safari.id, available: true)
 end
 
-12.times do
-Availability.create(start_time:DateTime.new(2022, 10, 16, 8, 0, 0, "-0600"), end_time:DateTime.new(2022, 10, 16, 17, 0, 0, "-0600"), activity_id: spa.id, available: true)
-end
+
+Availability.create(start_time:DateTime.new(2022, 10, 16, 8, 0, 0, "-0600"), end_time:DateTime.new(2022, 10, 16, 17, 0, 0, "-2200"), activity_id: spa.id, available: true)
+Availability.create(start_time:DateTime.new(2022, 10, 16, 8, 0, 0, "-0700"), end_time:DateTime.new(2022, 10, 16, 17, 0, 0, "-2300"), activity_id: spa.id, available: true)
+Availability.create(start_time:DateTime.new(2022, 10, 16, 8, 0, 0, "-0800"), end_time:DateTime.new(2022, 10, 16, 17, 0, 0, "-2400"), activity_id: spa.id, available: true)
+Availability.create(start_time:DateTime.new(2022, 10, 16, 8, 0, 0, "-0900"), end_time:DateTime.new(2022, 10, 16, 17, 0, 0, "-0100"), activity_id: spa.id, available: true)
+Availability.create(start_time:DateTime.new(2022, 10, 16, 8, 0, 0, "-1000"), end_time:DateTime.new(2022, 10, 16, 17, 0, 0, "-0200"), activity_id: spa.id, available: true)
+Availability.create(start_time:DateTime.new(2022, 10, 16, 8, 0, 0, "-1100"), end_time:DateTime.new(2022, 10, 16, 17, 0, 0, "-0300"), activity_id: spa.id, available: true)
+Availability.create(start_time:DateTime.new(2022, 10, 16, 8, 0, 0, "-1200"), end_time:DateTime.new(2022, 10, 16, 17, 0, 0, "-0400"), activity_id: spa.id, available: true)
+Availability.create(start_time:DateTime.new(2022, 10, 16, 8, 0, 0, "-1300"), end_time:DateTime.new(2022, 10, 16, 17, 0, 0, "-0500"), activity_id: spa.id, available: true)
+Availability.create(start_time:DateTime.new(2022, 10, 16, 8, 0, 0, "-1400"), end_time:DateTime.new(2022, 10, 16, 17, 0, 0, "-0600"), activity_id: spa.id, available: true)
+Availability.create(start_time:DateTime.new(2022, 10, 16, 8, 0, 0, "-1500"), end_time:DateTime.new(2022, 10, 16, 17, 0, 0, "-0700"), activity_id: spa.id, available: true)
+Availability.create(start_time:DateTime.new(2022, 10, 16, 8, 0, 0, "-1600"), end_time:DateTime.new(2022, 10, 16, 17, 0, 0, "-0800"), activity_id: spa.id, available: true)
+Availability.create(start_time:DateTime.new(2022, 10, 16, 8, 0, 0, "-1700"), end_time:DateTime.new(2022, 10, 16, 17, 0, 0, "-0900"), activity_id: spa.id, available: true)
+
 
 
 puts 'reservations'

@@ -41,11 +41,10 @@ body {
 }
 
 #signup {
-  /* background-image: url(https://basyspro.com/wp-content/uploads/2018/10/AdobeStock_157757227.jpeg);
-  padding-bottom: 1000px;
-  transp
-  background-size: contain;
-  background-repeat: no-repeat; */
+  background-image: url(https://ix-cdn.b2e5.com/images/67789/67789_20b63b89499e4037b7e9fdfd5913d3a1_1505352849.jpg);
+ height: 1000px;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: aquamarine;
 }
 
@@ -74,6 +73,12 @@ code {
 .navbar {
   background-color: aqua;
   overflow: hidden;
+}
+
+.sticky {
+  position: fixed;
+  top: 0%;
+  width: 100%;
 }
 
 /* Style the links inside the navigation bar */
@@ -110,7 +115,8 @@ h2 {
   text-align: center;
   width: 125%;
   height: 125%;
-  margin-left: 25%;
+  margin: auto;
+
 }
 
 .video-wrapper {
@@ -442,9 +448,13 @@ margin: auto;
   font-size: large;
 }
 .africa {
-  background-image: url(https://img.freepik.com/premium-vector/south-africa-flag-virtual-abstract-3d-object-from-triangular-polygons-blue-background_395079-1348.jpg);
-  background-size: 100%;
-  padding-bottom: 20px;
+  background: url("https://img.freepik.com/premium-vector/south-africa-flag-virtual-abstract-3d-object-from-triangular-polygons-blue-background_395079-1348.jpg");
+ height: 500px;
+ background-size: cover;
+ padding-top: 100px;
+
+  
+
   background-repeat: no-repeat;
   color: yellow;
 }
@@ -459,11 +469,13 @@ margin: auto;
   height: 200px;
   padding: 5px;
 }
-/* .row::after {
-  content: "";
-  clear: both;
-  display: table;
-} */
-/*  */
-
-
+.desribe {
+  color: yellow;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: large;
+  border: #4CAF50;
+  border: white solid;
+  border-style: dotted;
+  background-color: rgb(84, 81, 81);
+}

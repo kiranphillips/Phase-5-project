@@ -29,6 +29,10 @@ function App() {
 
   useEffect(() => {
     setLoggedInGuestId(sessionStorage.getItem("loggedInGuestId"));
+    if (sessionStorage.getItem("loggedInGuestId")){
+      setIsLoggedIn(true)
+    }
+    
     fetch("/guests")
       .then((r) => r.json())
       .then((guests) => setGuests(guests));

@@ -51,23 +51,48 @@ return(
       <div>{activity.availability.activity.name} </div>
       <p className="times">
       {`${date.getHours()}:${startFormatedMinutes}-${endDate.getHours()}:${formatedMinutes}`}
-
-        
       </p>
-      <button onClick={()=> handleClick(activity.id, activity.availability.id)}>reservation canceled</button>
+      <button onClick={()=> handleClick(activity.id, activity.availability.id)}>reservation canceled</button> 
     </div>
+    
   )});
 
   return (
-    <div>
-      <li>
+    <div className="detail" >
+      <p>
         Below is a list of your Current reservations you have made. If you would
         like to cancel one please click on the one you would like to cancel and
         it will be deleted.
-      </li>
+      </p>
+      
+      <div className="work" >{work}</div>
 
-      {work}
+      <div className="desribe">
+        Archery - Archery is the sport, practice, or skill of using a bow to shoot arrows. It is for all ages this is a group event and you are taken out into the wild. You will be shooting at a target not animals. 
+      </div>
+      <p></p>
+      
+      <div className="desribe">
+        Bush Dinner - Bush dining originated as sustenance dining for hunters who were unable to take their kill home after a long day. Dinner usually consisted of fresh meat, stew, and vegetables. Bush dining was also a chance to exchange stories by the fire.
+      </div>
+      <p></p>
+      <div className="desribe">
+        Cooking Class - These classes offer primary experience and ideas in particular areas associated with food making, presentation, and appreciation. This is done with locals, you will also have the option of eating what you make for lunch as the class is done over the lunch period. 
+      </div>
+      <p></p>
+      <div className="desribe">
+        Spa - an escape from the stresses of a busy lifestyle and provides the opportunity of self-renewal. Alow yourself to rest and rejuvinate. We have a spa menu available at the spa and will be on available to you shortly. 
+      </div>
+      <p></p>
+      <div className="desribe">
+        Boma -  the boma is a gathering place where guests meet for candlelit dinners in an open air atmosphere. this is accompanied with tradition dances and singing. 
+      </div>
+      <p></p>
+      <div className="desribe">
+      Safari - A game drive is an adventure that entails viewing wildlife in the comfort of a 4×4 open-sided safari vehicle that accommodates 4 to 6 people
+      </div>
     </div>
+    
   );
 }
 
