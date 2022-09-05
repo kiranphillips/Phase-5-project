@@ -1,9 +1,10 @@
 class ActivitiesController < ApplicationController
     def index
-        render json: Activities.all
+        render json: Activity.all
     end
 
     def show
-        item = Activities.find(params[:id])
+        item = Activity.find(params[:id])
         render json: activities, status: :ok
+    end
 end

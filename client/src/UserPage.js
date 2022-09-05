@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import Activities from 'react'
+import Activities from './Activities'
 
 function UserPage ({ setIsLoggedIn }) {
   const params = useParams()
@@ -13,7 +13,7 @@ function UserPage ({ setIsLoggedIn }) {
   }, [])
 
     return (
-      <Activities setIsLoggedIn={setIsLoggedIn} page={'guest'} loggedInUserId={id} />
+      <Activities setIsLoggedIn={setIsLoggedIn} page={'guest'} loggedInGuestId={id} />
     )
 }
 

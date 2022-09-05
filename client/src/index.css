@@ -1,6 +1,10 @@
 body {
   background-image: url(https://img.freepik.com/free-vector/polygonal-wireframe-image-human-hand-touch-electronic-display-abstract-vector-illustration_1284-30756.jpg);
-  background-size: contain;
+  /* background-size: 100%; */
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: aquamarine;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -9,7 +13,469 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#login {
+  background-size: 100%;
+  height: 100%;
+  margin-top: -60px;
+  background-repeat: no-repeat;
+  text-align: right;
+  padding-right: 125px;
+  padding-bottom: 100px;
+
+}
+
+#login form {
+  height: 750px;
+}
+
+#logincolor {
+  padding-top: 80px;
+  color: aquamarine;
+  text-shadow: 2px .5px rgb(79, 73, 73);
+  font-size: 60px;
+  font-family: 'Allerta';
+}
+
+.clock {
+  float: right;
+}
+
+#signup {
+  background-image: url(https://ix-cdn.b2e5.com/images/67789/67789_20b63b89499e4037b7e9fdfd5913d3a1_1505352849.jpg);
+ height: 1000px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aquamarine;
+}
+
+.kiran {
+  color: white;
+  float: inline-end;
+}
+
+
+.signUpForm {
+  float: left;;
+}
+
+
+#login_form {
+  text-align: right;
+  padding-right: 40px;
+  padding-top: 15px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    color: aquamarine;
+}
+.navbar {
+  background-color: aqua;
+  overflow: hidden;
+}
+
+.sticky {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.navbar .navlink {
+  /* float: left; */
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+/* Change the color of links on hover */
+.navbar .navlink:hover {
+  background-color: white;
+  color: rgb(244, 11, 213);
+}
+
+h1 {
+  color: aquamarine;
+/* text-shadow: 2px 3px aquamarine; */
+font-size: xxx-large;
+text-align: center;
+}
+
+h2 {
+  color: aquamarine;
+  /* text-shadow: 1px 2px rgb(252, 251, 251); */
+  padding-left: 15px;
+}
+
+#video {
+  text-align: center;
+  width: 125%;
+  height: 125%;
+  margin: auto;
+
+}
+
+.video-wrapper {
+  height: 125%;
+  width: 125%;
+  min-height: 225px;
+ }
+
+#gallery {
+  width: 650px;
+  height: 500px;
+margin: auto;
+}
+
+.img {
+  float: left;
+  max-width: fit-content;
+  height: 50%;
+  background-size: cover;
+}
+
+.ui .card {
+  background-color: rgba(142, 136, 140, 0.855);
+  text-overflow: ellipsis;
+}
+
+.ui.grid {
+  width: 50px;
+  height: 50px;
+  padding: 50px 20px;
+}
+.textcenter {
+  color: aquamarine;
+}
+
+.bold {
+  color: aquamarine;
+}
+
+#activityinfo {
+  color: black;
+  text-align: center;
+}
+
+#activity {
+  background-color: #222;
+}
+
+.react-calendar { 
+  margin: auto;
+  width: 700px;
+  max-width: 100%;
+  background-color: #f0f0f0;
+  color: #222;
+  border-radius: 8px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.125em;
+ }
+ .react-calendar__navigation button {
+  color: #6f48eb;
+  min-width: 44px;
+  background: none;
+  font-size: 16px;
+  margin-top: 8px;
+ }
+ .react-calendar__navigation button:enabled:hover,
+ .react-calendar__navigation button:enabled:focus {
+  background-color: #f8f8fa;
+ }
+ .react-calendar__navigation button[disabled] {
+  background-color: #f0f0f0;
+ }
+ abbr[title] {
+  text-decoration: none;
+ }
+ /* .react-calendar__month-view__days__day--weekend {
+  color: #d10000;
+ } */
+ .react-calendar__tile:enabled:hover,
+ .react-calendar__tile:enabled:focus {
+  background: #f8f8fa;
+  color: #6f48eb;
+  border-radius: 6px;
+ }
+ .react-calendar__tile--now {
+  background: #6f48eb33;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #6f48eb;
+ }
+ .react-calendar__tile--now:enabled:hover,
+ .react-calendar__tile--now:enabled:focus {
+  background: #6f48eb33;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #6f48eb;
+ }
+ .react-calendar__tile--hasActive:enabled:hover,
+ .react-calendar__tile--hasActive:enabled:focus {
+  background: #f8f8fa;
+ }
+ .react-calendar__tile--active {
+  background: #6f48eb;
+  border-radius: 6px;
+  font-weight: bold;
+  color: white;
+ }
+ .react-calendar__tile--active:enabled:hover,
+ .react-calendar__tile--active:enabled:focus {
+  background: #6f48eb;
+  color: white;
+ }
+ .react-calendar--selectRange .react-calendar__tile--hover {
+  background-color: #f8f8fa;
+ }
+ .react-calendar__tile--range {
+  background: #f8f8fa;
+  color: #6f48eb;
+  border-radius: 0;
+ }
+ .react-calendar__tile--rangeStart {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background: #6f48eb;
+  color: white;
+ }
+ .react-calendar__tile--rangeEnd {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background: #6f48eb;
+  color: white;
+ }
+
+ /*  */
+
+ img {
+  width: 100%;
+  height: auto;
+  /* display: block; */
+  object-fit: cover;
+}
+
+.hexagon-gallery {
+  margin: auto;
+  margin-top: 50px;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: 200px;
+  grid-gap: 14px;
+  padding-bottom: 50px;
+}
+
+.hex {
+  display: flex;
+  position: relative;
+  width: 240px;
+  height: 265px;
+  background-color: #424242;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hex:first-child {
+  grid-row-start: 1;
+  grid-column: 2 / span 2;
+}
+
+.hex:nth-child(2) {
+  grid-row-start: 1;
+  grid-column: 4 / span 2;
+}
+
+.hex:nth-child(3) {
+  grid-row-start: 1;
+  grid-column: 6 / span 2;
+}
+
+.hex:nth-child(4) {
+  grid-row-start: 2;
+  grid-column: 1 / span 2;
+}
+
+.hex:nth-child(5) {
+  grid-row-start: 2;
+  grid-column: 3 / span 2;
+}
+
+.hex:nth-child(6) {
+  grid-row-start: 2;
+  grid-column: 5 / span 2;
+}
+
+.hex:nth-child(7) {
+  grid-row-start: 2;
+  grid-column: 7 / span 2;
+}
+
+.hex:nth-child(8) {
+  grid-row-start: 3;
+  grid-column: 8 / span 2;
+}
+
+.hex:nth-child(9) {
+  grid-row-start: 5;
+  grid-column: 4 / span 3;
+}
+
+.hex:nth-child(10) {
+  grid-row-start: 5;
+  grid-column: 6 / span 2;
+}
+.hex:nth-child(11) {
+  grid-row-start: 1;
+  grid-column: 4 / span 2;
+}
+
+.hex:nth-child(12) {
+  grid-row-start: 1;
+  grid-column: 6 / span 2;
+}
+
+.hex:nth-child(13) {
+  grid-row-start: 5;
+  grid-column: 2 / span 2;
+}
+
+.hex:nth-child(14) {
+  grid-row-start: 4;
+  grid-column: 3 / span 2;
+}
+
+.hex:nth-child(15) {
+  grid-row-start: 4;
+  grid-column: 5 / span 2;
+}
+
+.hex:nth-child(16) {
+  grid-row-start: 4;
+  grid-column: 7 / span 2;
+}
+
+.hex:nth-child(17) {
+  grid-row-start: 4;
+  grid-column: 1 / span 2;
+}
+
+.hex:nth-child(18) {
+  grid-row-start: 2;
+  grid-column: 9 / span 2;
+}
+
+.hex:nth-child(19) {
+  grid-row-start: 3;
+  grid-column: 6 / span 2;
+}
+.hex:nth-child(20) {
+  grid-row-start: 5;
+  grid-column: 8 / span 2;
+}
+
+.hex:nth-child(21) {
+  grid-row-start: 4;
+  grid-column: 9 / span 2;
+}
+
+.hex:nth-child(22) {
+  grid-row-start: 2;
+  grid-column: 1 / span 2;
+}
+
+.hex:nth-child(23) {
+  grid-row-start: 6;
+  grid-column: 3 / span 2;
+}
+
+.hex:nth-child(24) {
+  grid-row-start: 6;
+  grid-column: 5 / span 2;
+}
+
+.hex:nth-child(25) {
+  grid-row-start: 6;
+  grid-column: 7 / span 2;
+}
+
+.hex:nth-child(26) {
+  grid-row-start: 3;
+  grid-column: 2 / span 2;
+}
+
+.hex:nth-child(27) {
+  grid-row-start: 3;
+  grid-column: 4 / span 2;
+}
+
+#timeslot {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50; /* Green */
+  width: 250px;
+  height: 50px;
+}
+
+.activitynames {
+  /* background-image: url(https://img.freepik.com/free-vector/polygonal-wireframe-image-human-hand-touch-electronic-display-abstract-vector-illustration_1284-30756.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat; */
+  color: aquamarine;
+  margin: 0;
+}
+
+.slide {
+  width: 750px;
+  height: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.App {
+  color: aquamarine;
+  text-align: center;
+  padding: 5px;
+  font-size: large;
+}
+.africa {
+  background: url("https://img.freepik.com/premium-vector/south-africa-flag-virtual-abstract-3d-object-from-triangular-polygons-blue-background_395079-1348.jpg");
+ height: 500px;
+ background-size: cover;
+ padding-top: 100px;
+
+  
+
+  background-repeat: no-repeat;
+  color: yellow;
+}
+
+.times {
+  color: yellow;
+}
+
+.hsk {
+  float: left;
+  width: 33.33%;
+  height: 200px;
+  padding: 5px;
+}
+.desribe {
+  color: yellow;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: large;
+  border: #4CAF50;
+  border: white solid;
+  border-style: dotted;
+  background-color: rgb(84, 81, 81);
 }

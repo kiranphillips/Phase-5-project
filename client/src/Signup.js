@@ -66,7 +66,7 @@ function SignUp ({ setIsLoggedIn, setLoggedInGuestId }) {
           <input type="text" name="username" onChange={ handleUsernameChange } value={ enteredUserName } /><br />
 
           <label>
-            Email
+            Email....... 
           </label>
           <input type='text' name='email' value={ enteredEmail } onChange={ handleEmailChange } /><br/>
 
